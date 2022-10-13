@@ -1,0 +1,4 @@
+#botonesPrecio button:focus {
+    background-color: var(--Amarillo);
+    color: black;
+}

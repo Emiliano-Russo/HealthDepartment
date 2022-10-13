@@ -1,0 +1,46 @@
+<div>
+  <h1>Galeria Musical {{ nombreGaleria }}</h1>
+  <div>
+    <h3 style="margin-top: 2rem">Canciones</h3>
+    <div class="muestraOverflowX">
+      <div id="cuadroCancion" *ngFor="let cancion of canciones">
+        <p>{{ cancion.titulo }}</p>
+        <p>Autor: {{ cancion.autor }}</p>
+        <p>Duracion: {{ cancion.duracion }}</p>
+        <img src="{{ cancion.linkImagen }}" alt="Sin Imagen" />
+        <audio controls>
+          <source src="{{ cancion.linkAudio }}" />
+        </audio>
+      </div>
+    </div>
+    <h3 style="margin-top: 2rem">Videos</h3>
+    <div class="muestraOverflowX">
+      <div id="cuadroVideo" *ngFor="let video of videos">
+        <iframe
+          height="200px"
+          [src]="LimpiarURL(video.linkVideo)"
+          title="YouTube video player"
+          frameborder="0"
+        ></iframe>
+        <div id="infoVideo">
+          <h4>Información</h4>
+          <p>Título: {{ video.nombre }}</p>
+          <p>Duración: {{ Formatear(video.duracionMins) }}</p>
+          <p>Autor: {{ video.autor }}</p>
+        </div>
+      </div>
+    </div>
+    <h3 style="margin-top: 2rem">Playlists</h3>
+    <div class="muestraOverflowX">
+      <div
+        id="cuadroPlaylist"
+        *ngFor="let playlist of playlists"
+        (click)="IrAPlaylist(playlist.id)"
+      >
+        <h3>{{ playlist.nombre }}</h3>
+        <img src="{{ playlist.linkImagen }}" alt="Sin Imagen" />
+        <p>{{ playlist.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</div>

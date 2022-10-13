@@ -1,0 +1,14 @@
+#listaScroll {
+  display: flex;
+  width: 20rem;
+  height: 25rem;
+  overflow-y: scroll;
+  border: 1px solid black;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+#listaScroll * {
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}

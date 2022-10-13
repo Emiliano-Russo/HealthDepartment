@@ -1,0 +1,48 @@
+<div class="caja">
+  <input id="nombre" type="text" value="{{ psicologo.Nombre }}" />
+  <button (click)="SetFormato(0)">Virtual</button>
+  <button (click)="SetFormato(1)">Presencial</button>
+  <input type="text" id="direccion" value="{{ psicologo.DireccionUrbana }}" />
+  <div id="Categorias">
+    <select id="d1">
+      <option value="-1">Ninguna</option>
+      <option value="0">Depresión</option>
+      <option value="1">Estrés</option>
+      <option value="2">Ansiedad</option>
+      <option value="3">Autoestima</option>
+      <option value="4">Enojo</option>
+      <option value="5">Relaciones</option>
+      <option value="6">Duelo</option>
+    </select>
+    <select id="d2">
+      <option value="-1">Ninguna</option>
+      <option value="0">Depresión</option>
+      <option value="1">Estrés</option>
+      <option value="2">Ansiedad</option>
+      <option value="3">Autoestima</option>
+      <option value="4">Enojo</option>
+      <option value="5">Relaciones</option>
+      <option value="6">Duelo</option>
+    </select>
+    <select id="d3">
+      <option value="-1">Ninguna</option>
+      <option value="0">Depresión</option>
+      <option value="1">Estrés</option>
+      <option value="2">Ansiedad</option>
+      <option value="3">Autoestima</option>
+      <option value="4">Enojo</option>
+      <option value="5">Relaciones</option>
+      <option value="6">Duelo</option>
+    </select>
+  </div>
+  <div style="display: flex; margin: 0 auto">
+    <div id="botonesPrecio">
+      <button (click)="SetVariablePrecio(500)">$500</button>
+      <button (click)="SetVariablePrecio(750)">$750</button>
+      <button (click)="SetVariablePrecio(1500)">$1500</button>
+      <button (click)="SetVariablePrecio(2000)">$2000</button>
+    </div>
+  </div>
+  <p>Precio Hora ${{ psicologo.PrecioHora }}</p>
+  <button (click)="Registrar()">Registrar</button>
+</div>

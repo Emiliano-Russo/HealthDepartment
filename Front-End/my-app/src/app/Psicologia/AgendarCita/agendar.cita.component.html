@@ -1,0 +1,19 @@
+<h1>Agendar Cita</h1>
+<h2>Dolencia: {{ dolenciaString }}</h2>
+<br />
+<h4>Datos Personales</h4>
+<div class="caja">
+  <input type="text" placeholder="nombre" id="Nombre" />
+  <input type="text" placeholder="apellido" id="Apellido" />
+  <p>Fecha Nacimiento</p>
+  <input type="date" id="fechaNacimiento" />
+  <input type="email" id="email" placeholder="ejemplo@gmail.com" />
+  <input type="text" id="celular" placeholder="092111222" />
+  <div>
+    <button (click)="SetCantHoras(1)">1 hora</button>
+    <button (click)="SetCantHoras(1.5)">1h:30min</button>
+    <button (click)="SetCantHoras(2)">2 horas</button>
+  </div>
+  <p>Cantidad horas: {{ cantHorasSeleccionadas }} hora/s</p>
+  <button (click)="RegistrarCita()">Agendar Cita</button>
+</div>

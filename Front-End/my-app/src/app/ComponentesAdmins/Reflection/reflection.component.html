@@ -1,0 +1,26 @@
+<h1 style="margin-top: 50px">Subir Archivo Musical</h1>
+<div class="caja">
+  <div *ngFor="let procesador of listaProcesadores">
+    <button id="procesador" (click)="ProcesadorSeleccionado(procesador)">
+      Agregar
+    </button>
+    {{ procesador }}
+  </div>
+
+  <input
+    type="file"
+    class="entrada-archivo"
+    (change)="ArchivoSeleccionado($event)"
+  />
+
+  <div class="file-upload">
+    <button
+      mat-mini-fab
+      color="primary"
+      class="boton-subirCambios"
+      (click)="EnviarArchivo()"
+    >
+      Enviar Archivo
+    </button>
+  </div>
+</div>

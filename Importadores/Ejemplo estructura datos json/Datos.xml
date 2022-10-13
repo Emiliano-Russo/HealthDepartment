@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GaleriaMusical>
+  <CategoriaMusical>1</CategoriaMusical>
+  <PlayLists>
+	<PlayList>
+		<ID>0</ID>
+		<Nombre>PlayListJorge</Nombre>
+		<Descripcion>siempre jorge</Descripcion>
+		<LinkImagen>www.siempremusica.com/jorge/PlayListJorge/PlayList</LinkImagen>
+		<Canciones>	
+		</Canciones>
+		<Videos>
+  		</Videos>
+		<Categorias>
+			<Categoria>
+				<Musical>1</Musical>
+			</Categoria>
+		</Categorias>
+	</PlayList>
+  </PlayLists>
+  <CancionesGaleria>
+	<Cancion>
+		<ID>0</ID>
+    		<Titulo>Hola</Titulo>
+    		<Descripcion>Cancion para relajarse</Descripcion>
+    		<Duracion>100</Duracion>
+    		<Autor>Jorge</Autor>
+    		<LinkAudio>www.siempremusica.com/jorge/Hola</LinkAudio>
+    		<LinkImagen></LinkImagen>
+    		<CategoriaMusical> 
+        		<Musical>0</Musical>
+        		<Musical>1</Musical>
+		</CategoriaMusical>
+	</Cancion>
+	<Cancion>
+		<ID>0</ID>
+    		<Titulo>Holaadw</Titulo>
+    		<Descripcion>Cancion para relajarseawd</Descripcion>
+    		<Duracion>100546</Duracion>
+    		<Autor>Jorgesef</Autor>
+    		<LinkAudio>www.siempremusica.com/jorge/Hola</LinkAudio>
+    		<LinkImagen>sefes</LinkImagen>
+    		<CategoriaMusical> 
+        		<Musical>0</Musical>
+        		<Musical>1</Musical>
+			<Musical>2</Musical>
+		</CategoriaMusical>
+	</Cancion>
+  </CancionesGaleria>
+  <VideosGaleria>
+	<Video>
+		<ID>0</ID>
+    		<Nombre>HolaVideo</Nombre>
+    		<DuracionMins>100546</DuracionMins>
+		<LinkVideo>www.siempremusica.com/jorge/HolaVideo</LinkVideo>
+    		<Autor>Jorgesef</Autor>
+    		<CategoriaMusical> 
+        		<Musical>0</Musical>
+        		<Musical>1</Musical>
+			<Musical>2</Musical>
+		</CategoriaMusical>
+	</Video>
+  </VideosGaleria>
+</GaleriaMusical>

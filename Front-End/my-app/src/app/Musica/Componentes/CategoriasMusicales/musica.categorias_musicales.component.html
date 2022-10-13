@@ -1,0 +1,9 @@
+<div class="cajita-central">
+  <h1>Categorias Musicales</h1>
+  <div *ngFor="let categoria of categoriasMusicales" class="caja-seleccion">
+    <button (click)="IrAGaleriaMusical(categoria)">
+      {{ categoria }}
+    </button>
+  </div>
+</div>
+<br />

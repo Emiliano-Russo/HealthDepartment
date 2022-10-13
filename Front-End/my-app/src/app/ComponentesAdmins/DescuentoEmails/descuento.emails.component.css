@@ -1,0 +1,20 @@
+#listaEmails {
+  display: flex;
+  width: 25rem;
+  height: 15rem;
+  overflow-y: scroll;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+#listaEmails button {
+  height: 2rem;
+  width: 25rem;
+  margin-bottom: 0.3rem;
+}
+
+#botonesDescuento {
+  margin: 0 auto;
+}

@@ -1,0 +1,44 @@
+<h1 style="margin-top: 15px">Registrar Playlist</h1>
+<div class="caja">
+  <input type="text" placeholder="nombre" id="nombre" />
+  <input type="text" placeholder="descripcion" id="descripcion" />
+  <input type="text" placeholder="link imagen" id="link" />
+
+  <div id="categorias">
+    <button
+      *ngFor="let categoria of listaCategorias"
+      (click)="AgregarCategoriaParaPlaylist(categoria)"
+    >
+      {{ categoria }}
+    </button>
+  </div>
+
+  <div class="contenido">
+    <!--*ngFor de canciones-->
+    <div id="canciones">
+      <h3>Canciones</h3>
+      <div class="scroll-box">
+        <div id="cancion" *ngFor="let cancion of canciones">
+          <p>Titutlo: {{ cancion.titulo }}</p>
+          <p>Autor: {{ cancion.autor }}</p>
+          <button (click)="AgregarCancion(cancion)">Incluir</button>
+        </div>
+      </div>
+    </div>
+    <!--*ngFor de videos-->
+    <div>
+      <h3>Videos</h3>
+      <div class="scroll-box">
+        <div id="video" *ngFor="let video of videos">
+          <p>Nombre: {{ video.nombre }}</p>
+          <p>Autor: {{ video.autor }}</p>
+          <button (click)="AgregarVideo(video)">Incluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="registrar" (click)="RegistrarPlaylist()">
+    RegistrarPlaylist
+  </button>
+</div>

@@ -1,0 +1,13 @@
+#CategoriasPsicologicas button {
+  padding: 1rem 3rem;
+}
+
+button {
+  background-color: var(--AzulOscuro);
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: var(--Amarillo);
+  color: var(--AzulOscuro);
+}

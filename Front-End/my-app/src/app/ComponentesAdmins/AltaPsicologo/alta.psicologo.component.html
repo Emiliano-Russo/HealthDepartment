@@ -1,0 +1,57 @@
+<h1 style="margin-top: 2rem">Alta Psicologo</h1>
+<div>
+  <div class="caja">
+    <input type="text" id="nombrePsicologo" placeholder="Nombre" />
+    <div class="caja" style="margin-bottom: 0">
+      <button (click)="SetFormatoConsulta(0)">Virtual</button>
+      <button (click)="SetFormatoConsulta(1)">Presencial</button>
+    </div>
+    <p>Formato: {{ formatoConsultaTexto }}</p>
+    <input type="text" id="direccionUrbana" placeholder="Direccion Urbana" />
+    <div id="Categorias">
+      <select id="d1">
+        <option value=-1>Ninguna</option>
+        <option value=0>Depresión</option>
+        <option value=1>Estrés</option>
+        <option value=2>Ansiedad</option>
+        <option value=3>Autoestima</option>
+        <option value=4>Enojo</option>
+        <option value=5>Relaciones</option>
+        <option value=6>Duelo</option>
+        <option value=7>Otro</option>
+      </select>
+      <select id="d2">
+        <option value=-1>Ninguna</option>
+        <option value=0>Depresión</option>
+        <option value=1>Estrés</option>
+        <option value=2>Ansiedad</option>
+        <option value=3>Autoestima</option>
+        <option value=4>Enojo</option>
+        <option value=5>Relaciones</option>
+        <option value=6>Duelo</option>
+        <option value=7>Otro</option>
+      </select>
+      <select id="d3">
+        <option value=-1>Ninguna</option>
+        <option value=0>Depresión</option>
+        <option value=1>Estrés</option>
+        <option value=2>Ansiedad</option>
+        <option value=3>Autoestima</option>
+        <option value=4>Enojo</option>
+        <option value=5>Relaciones</option>
+        <option value=6>Duelo</option>
+        <option value=7>Otro</option>
+      </select>
+    </div>
+    <div style="display: flex; margin: 0 auto">
+      <div id="botonesPrecio">
+        <button (click)="SetVariablePrecio(500)">$500</button>
+        <button (click)="SetVariablePrecio(750)">$750</button>
+        <button (click)="SetVariablePrecio(1500)">$1500</button>
+        <button (click)="SetVariablePrecio(2000)">$2000</button>
+      </div>
+    </div>
+    <p>Precio Hora ${{precioPsicologo}}</p>
+    <button (click)="Registrar()">Registrar</button>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+#listaScrollPsicologos * {
+  margin-bottom: 0.3rem;
+}
+
+#listaScrollPsicologos {
+  display: block;
+  width: 15rem;
+  height: 20rem;
+  overflow-y: scroll;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}

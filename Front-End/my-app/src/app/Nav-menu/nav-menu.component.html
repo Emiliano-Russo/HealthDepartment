@@ -1,0 +1,23 @@
+<nav>
+  <button
+    [hidden]="adminLogeado"
+    style="color: transparent; border-color: transparent"
+  >
+    Login
+  </button>
+  <p [hidden]="!adminLogeado" style="color: transparent">{{ nombreAdmin }}</p>
+  <a
+    [routerLink]="['/']"
+    style="margin-left: 50px; color: aliceblue"
+    [hidden]="adminLogeado"
+    >Ministerio de Salud Pública</a
+  >
+  <a
+    [routerLink]="['/AdminBienvenida']"
+    style="margin-left: 50px; color: aliceblue"
+    [hidden]="!adminLogeado"
+    >Ministerio de Salud Pública</a
+  >
+  <button [routerLink]="['/AdminLogin']" [hidden]="adminLogeado">Login</button>
+  <p [hidden]="!adminLogeado" style="color: azure">{{ nombreAdmin }}</p>
+</nav>

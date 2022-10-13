@@ -1,0 +1,11 @@
+<div>
+  <h1 style="margin-top: 2rem">Dolencia</h1>
+  <div id="CategoriasPsicologicas" class="caja">
+    <button
+      *ngFor="let categoria of categoriasPsicologicas"
+      (click)="IrAgendarCita(categoria)"
+    >
+      {{ categoria }}
+    </button>
+  </div>
+</div>

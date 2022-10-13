@@ -1,0 +1,39 @@
+<div>
+  <h1 style="margin-top: 2rem">Alta Cancion</h1>
+  <div
+    id="DatosCancion"
+    class="caja"
+    style="margin-top: 1rem; margin-bottom: 1rem"
+  >
+    <input type="text" id="tituloCancion" placeholder="Título" />
+    <input type="text" id="autorCancion" placeholder="Autor" />
+    <input type="text" id="descripcionCancion" placeholder="Descripción" />
+    <input
+      type="text"
+      id="duracionCancion"
+      placeholder="Duración en segundos"
+    />
+    <input type="text" id="linkCancion" placeholder="Link Canción" />
+    <input type="text" id="linkImagen" placeholder="Link Imagen" />
+  </div>
+
+  <div class="caja" style="margin: 1rem auto">
+    <div *ngFor="let categoria of listaCategorias">
+      <button id="categoria" (click)="AgregarCategoriaParaCancion(categoria)">
+        Agregar
+      </button>
+      {{ categoria }}
+    </div>
+  </div>
+
+  <p style="margin: 0">Playlists</p>
+  <div class="caja" id="listaScroll">
+    <div *ngFor="let playList of listaPlayLists">
+      <button (click)="AgregarCancionEnPlayList(playList.id)">Agregar</button>
+      {{ playList.nombre }}
+    </div>
+  </div>
+  <div class="caja">
+    <button id="AltaCancion" (click)="DarAltaCancion()">Alta Cancion</button>
+  </div>
+</div>

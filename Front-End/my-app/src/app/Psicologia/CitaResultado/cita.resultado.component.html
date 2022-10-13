@@ -1,0 +1,15 @@
+<div style="margin-top: 3rem">
+  <h1>Resultado Cita</h1>
+  <div id="DatosCita" [hidden]="!todoOk">
+    <p>Nombre Psicologo: {{ datosCita.nombrePsicologo }}</p>
+    <p>Formato Consulta: {{ datosCita.formatoConsulta }}</p>
+    <p>Direccion: {{ datosCita.direccionConsulta }}</p>
+    <p>Fecha: {{ datosCita.fechaConsulta }}</p>
+    <p>Precio Final: {{ datosCita.precioFinal }}</p>
+    <p>Descuento: {{ datosCita.descuento }}%</p>
+    <p>Duracion Sesion: {{ datosCita.duracionSesion }} hora/s</p>
+  </div>
+  <h2 [hidden]="todoOk" style="margin-top: 5rem">
+    Datos ingresados incorrectos
+  </h2>
+</div>

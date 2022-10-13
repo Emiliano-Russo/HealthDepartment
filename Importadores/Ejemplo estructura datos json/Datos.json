@@ -1,0 +1,62 @@
+{
+   "CategoriaMusical":1,
+   "PlayLists":[
+      {
+         "Nombre":"PlayList Reflection",
+         "Descripcion":"Canciones para reflectionar",
+         "LinkImagen":"https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg",
+		 "Categorias":[
+            {
+               "Musical":0
+            },
+            {
+               "Musical":1
+            }
+         ]
+      }
+   ],
+   "Canciones":[
+      {
+         "Titulo":"Reflection Winter",
+         "Descripcion":"Cancion linda para relajarse en invierno",
+         "Duracion":100,
+         "Autor":"MyPc",
+         "LinkAudio":"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+         "LinkImagen":"",
+         "CategoriaMusical":[
+            {
+               "Musical":0
+            },
+            {
+               "Musical":1
+            }
+         ]
+      }
+   ],
+   "Videos":[
+      {
+         "Nombre":"Meditacion Reflection",
+         "Duracion":400,
+         "LinkVideo":"https://www.youtube.com/embed/E5hXO6Mff6Q",
+         "Autor":"MyPc",
+         "Categorias":[
+            {
+               "Musical":0
+            },
+            {
+               "Musical":1
+            }
+         ]
+      }
+   ]
+}
+
+
+
+
+
+
+
+
+
+

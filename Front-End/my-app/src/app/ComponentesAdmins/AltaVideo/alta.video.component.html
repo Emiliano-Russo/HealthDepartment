@@ -1,0 +1,38 @@
+<div>
+  <h1 style="margin-top: 2rem">Alta Video</h1>
+  <div
+    id="DatosVideos"
+    class="caja"
+    style="margin-top: 1rem; margin-bottom: 1rem"
+  >
+    <input type="text" id="nombreVideo" placeholder="Nombre" />
+    <input type="text" id="autorVideo" placeholder="Autor" />
+    <input
+      type="number"
+      id="duracionVideo"
+      placeholder="Duración en minutos"
+      min="1"
+    />
+    <input type="text" id="linkVideo" placeholder="LinkVideo" />
+  </div>
+
+  <div class="caja" style="margin: 1rem auto">
+    <div *ngFor="let categoria of listaCategorias">
+      <button id="categoria" (click)="AgregarCategoriaParaVideo(categoria)">
+        Agregar
+      </button>
+      {{ categoria }}
+    </div>
+  </div>
+
+  <p style="margin: 0">Playlists</p>
+  <div class="caja" id="listaScroll">
+    <div *ngFor="let playList of listaPlayLists">
+      <button (click)="AgregarVideoEnPlayList(playList.id)">Agregar</button>
+      {{ playList.nombre }}
+    </div>
+  </div>
+  <div class="caja">
+    <button id="AltaVideo" (click)="DarAltaVideo()">Alta Video</button>
+  </div>
+</div>

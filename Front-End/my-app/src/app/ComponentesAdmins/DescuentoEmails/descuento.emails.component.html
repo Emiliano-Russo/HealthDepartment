@@ -1,0 +1,20 @@
+<div class="caja" style="margin-top: 2rem">
+  <h1>Descuentos para Emails</h1>
+  <p>Email Seleccionado: {{ emailSeleccionado }}</p>
+  <div id="listaEmails">
+    <button
+      id="email"
+      *ngFor="let email of emails"
+      (click)="SeleccionarMail(email)"
+    >
+      {{ email }}
+    </button>
+  </div>
+  <div id="botonesDescuento">
+    <button (click)="SetVariablePorcentaje(15)">15%</button>
+    <button (click)="SetVariablePorcentaje(25)">25%</button>
+    <button (click)="SetVariablePorcentaje(50)">50%</button>
+  </div>
+  <p>Descuento: {{ descuento }} %</p>
+  <button (click)="AplicarDescuento()">Aplicar Descuento</button>
+</div>

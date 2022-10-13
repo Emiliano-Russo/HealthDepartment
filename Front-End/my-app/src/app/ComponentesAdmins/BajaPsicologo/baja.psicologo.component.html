@@ -1,0 +1,10 @@
+<div>
+  <h1 style="margin-top: 2rem">Baja Psicologo</h1>
+
+  <div id="listaScroll">
+    <div *ngFor="let psicologo of listaPsicologos">
+      <button (click)="EliminarPsicologo(psicologo.id)">Eliminar</button>
+      {{ psicologo.nombre }}
+    </div>
+  </div>
+</div>
